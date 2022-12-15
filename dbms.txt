@@ -1,9 +1,0 @@
-select concat(fname, lname," " ,age)  from airmen;
-alter table airmen rename column gender to m/f;
-
-select  from airmen where age> (sysdate()-'1-jan-2010')/365;
-select count(distinct fname) from airmen;
-select avg(age) from airmen group by rating ;
-select a.aid from airmen as a,plane as p,reserve as r where a.aid=r.aid and r.pid=p.pid and p.pid=401;
-select    	 from airmen as a,plane as p,reserve as r where a.aid=r.aid and p.pid=r.pid and p.colour='green'or p.colour='red';
-
